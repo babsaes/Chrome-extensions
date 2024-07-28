@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Greyscale Settings</title>
+    <style>
+
+    html {
+   
+        border-radius: 10px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        width: 400px;
+        padding: 20px;
+    background-color:white;
+        border-radius: 10px;
+        border:none;
+float:left      }
+
+
+      h1 {
+        color: black;
+        font-weight: normal;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom:30px;
+        line-height: 1.5;
+        padding: 0px;
+      }
+
+
+      h2 {
+        color: #1e1e1e;
+        --tw-shadow: 0 4px 4px rgba(0,0,0,.2),inset 0 0 0 0 transparent;
+        font-weight: normal;
+        font-size: 15px;
+        margin: 0;
+      padding-bottom:20px;
+
+
+      }
+
+      .enter {
+      padding: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+          border-radius: 12px;
+              margin-top: 10px;
+/*          border: wavy 1px #ECECEC;*/
+        background-color: rgb(0,0,0, 0.04);
+            }
+
+
+
+ input {
+   padding: 12px;
+   border-radius: 6px;
+    border-color: #aaaaaa;
+   border-style: solid;
+    border-width: 0.5px;
+     font-size: 14px;
+     min-width: 200px; 
+    }
+
+    #add-website {
+      background-color: #DBFF00;
+      color: #1e1e1e;
+      padding: 10px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 0px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+         border-style: none;
+            box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, .2);
+    }
+
+     #add-website:hover, button:hover {
+      opacity: 0.8;
+box-shadow: inset 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, .2);
+
+      }
+    #add-website:disabled {
+      background-color: #888;
+      cursor: not-allowed;
+    }
+    
+
+          button {
+            background-color: #f8f8f8;
+                        padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: -5px 0px;
+            cursor: pointer;
+            border-radius: 5px;
+            float: right;
+                     border-style: none;
+
+            box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, .2);
+
+          }
+
+          button:disabled {
+            background-color: #888;
+            cursor: not-allowed;
+          }
+
+    #button {
+            background-color: white;
+            border:none;
+            color: #1e1e1e;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: -5px 0px;
+            cursor: pointer;
+            border-radius: 5px;
+            float: right;
+
+          }
+      #website-list {
+        margin-top: 40px;
+      }
+
+
+
+      .list {
+        padding: 0px;
+        padding-top:30px;
+        padding-bottom:0px;
+        margin-top:20px;
+      border-radius: 12px;
+/*      border: solid 1px #ECECEC;*/
+/*       background-color: rgb(0,0,0, 0.04);*/
+        }
+
+         #website-list {
+           list-style-type: none;
+           padding: 0px;
+           margin-bottom:0px;
+           margin-top:0px;
+
+         }
+
+
+
+         #website-list  p{
+        margin: 0px 0;
+           padding: 20px;
+           margin-bottom: 10px;
+           font-weight: normal;
+           border-radius: 0px;
+           font-size: 15px;
+           color:rgba(0, 0, 0, 0.45);
+            border-radius: 6px;
+/*          border-bottom: 1px solid #DEDEDE;*/
+             background-color: rgb(0,0,0, 0.02);
+         }
+
+#no-website-msg   {
+      margin: 0 auto;
+           text-align: center;
+           font-weight: normal;
+           border-radius: 0px;
+           font-size: 16px;
+           color:rgba(0, 0, 0, 0.15);
+                                 padding-bottom: 15px;
+
+/*          border-bottom: 1px solid #DEDEDE;*/
+
+    }
+
+
+    </style>
+  </head>
+  <body>
+        <div class="enter">
+    <h2>Add a grayscale</h2>
+    <input id="website-input" type="text" placeholder="Enter website domain">
+    <button id="add-website">Add</button>
+          </div>
+
+     <div class="list">
+     <!-- <h2>Websites with grayscale</h2> -->
+    <div id="website-list"></div>
+        <p id="no-website-msg">No websites added yet </p>
+
+  </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
