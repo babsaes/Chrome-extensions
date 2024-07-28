@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+       html {
+   
+        border-radius: 10px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        width: 400px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border:none;
+      }
+
+
+.enter1 {
+       padding: 20px;
+padding-top: 30px;
+padding-bottom: 30px;
+    border-radius: 12px;
+        margin-top: 30px;
+    border: solid 1px #ECECEC;
+  background-color: rgb(0,0,0, 0.04);
+
+      }
+
+
+.enter {
+          padding: 20px;
+padding-top: 30px;
+padding-bottom: 00px;
+    border-radius: 12px;
+        margin-top: 30px;
+    border: solid 1px #ECECEC;
+  background-color: rgb(0,0,0, 0.04);
+
+      }
+
+
+
+      h1 {
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom:30px;
+line-height: 1.5;
+        padding: 0px;
+      }
+
+
+
+      h2 {
+        color: #1e1e1e;
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0;
+        padding-bottom:30px;
+      }
+
+
+
+      #websitesList {
+    list-style-type: none;
+        padding: 0px;
+        margin-bottom:0px;
+        margin-top:0px;
+      }
+
+      #websitesList li {
+     margin: 1px 0;
+        padding: 20px;
+        padding-left:5px;
+         padding-right:5px;
+
+        margin-bottom:0px;
+        font-weight: normal;
+        border-radius: 0px;
+        font-size: 16px;
+        color:rgba(0, 0, 0, 0.65);
+         border-radius: 0px;
+       border-bottom: 1px solid #ECECEC;
+
+
+      }
+
+
+
+      #addWebsite {
+        background-color: #1e1e1e;
+        border: none;
+        color: #f8f8f8;
+        padding: 12px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        float:right;
+      }
+
+      #addWebsite:disabled {
+        background-color: #888;
+        cursor: not-allowed;
+      }
+
+       #addWebsite:hover, button:hover {
+        opacity: 0.8;
+            }
+      #website {
+              padding: 12px;
+              border-radius: 6px;
+              border-color: #aaaaaa;
+              border-style: solid;
+              border-width: 0.5px;
+              font-size: 14px;
+              min-width: 200px;
+        }
+
+
+      .remove-btn {
+        background-color: white;
+        border: 0.5px solid #cccccc;
+        color: #1e1e1e;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: -5px 0px;
+        cursor: pointer;
+        border-radius: 5px;
+        float: right;
+            }
+
+  </style>
+</head>
+<body>
+  <h1>Pause button</h1>
+  <div class="enter1">
+  <h2>Add Website</h2>
+  <input type="text" id="website" placeholder="Enter website domain">
+  <button id="addWebsite">Add</button>
+</div>
+  <div class="enter">
+  <h2>Blocked Websites</h2>
+  <ul id="websitesList"></ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
